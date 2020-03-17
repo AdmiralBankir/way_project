@@ -30,9 +30,20 @@
   line-height: 32px;
   text-align: center;
   color: $accent-color;
-  border-bottom: 1px solid;
+  text-decoration: underline;
+}
+
+.page-header__nav {
+  display: flex;
+  min-width: 200px;
+  margin-right: 57px;
+}
+
+.page-header__nav > a:not(:last-child) {
+  margin-right: 40px;
 }
 
 .page-header__contact svg {
   fill: none;
+  margin-right: 11px;
 }
