@@ -1,0 +1,38 @@
+.page-header__nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: $very-dark-color;
+  mix-blend-mode: normal;
+  text-decoration: none;
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 39px auto;
+}
+
+.page-header_nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__contact {
+  text-decoration: none;
+  display: flex;
+}
+
+.page-header__contact span {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: $accent-color;
+  border-bottom: 1px solid;
+}
+
+.page-header__contact svg {
+  fill: none;
+}

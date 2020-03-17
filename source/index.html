@@ -6,29 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Way: путешествие по Европе</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
   <h1 class="visually-hidden">Way: путешествие по Европе</h1>
   <header class="page-header">
-    <div class="page-header__top">
-      <svg class="page-header__logo">
-        <use xlink:href="#icon-header-logo" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+    <div class="page-header__top center-wrapper">
+      <svg class="page-header__logo" width="57" height="22" viewBox="0 0 57 22">
+        <use xlink:href="#icon-logo" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
       </svg>
 
-      <nav class="page-header__nav">
-        <a href="#">О путешествии</a>
-        <a href="#">Цены</a>
-      </nav>
+      <div class="page-header_nav-wrapper">
+        <nav class="page-header__nav">
+          <a href="#">О путешествии</a>
+          <a href="#">Цены</a>
+        </nav>
 
-      <a class="page-header__contact" href="#">
-        <svg>
-          <use xlink:href="#icon-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-        </svg>
-      </a>
+        <a class="page-header__contact" href="tel:+749978468446">
+          <svg class="page-header__contact-icon" width="30" height="30" viewBox="0 0 30 30">
+            <use xlink:href="#icon-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span>+7 (499) -784-684-46</span>
+        </a>
+      </div>
     </div>
     <div class="page-header__bottom">
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)"
+          srcset="./img/header-view-desktop@1x.webp, ./img/header-view-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="./img/header-view-tablet@1x.webp, ./img/header-view-tablet@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 320px)"
+          srcset="./img/header-view-mobile@1x.webp, ./img/header-view-mobile@2x.webp 2x">
+
+        <source media="(min-width: 768px)" srcset="./img/header-view-tablet@1x.jpg, ./img/header-view-tablet@2x.jpg">
+        <source media="(min-width: 320px)" srcset="./img/header-view-mobile@1x.jpg, ./img/header-view-mobile@2x.jpg 2x">
+        <img src="./img/header-view-desktop@1x.jpg" srcset="./img/header-view-desktop@2x.jpg 2x"
+          alt="Прекрасные виды европейских гор. А ещё там есть замок">
+      </picture>
       <div class="page-header__banner">
         <p class="page-header__title">Путешествие по Европе</p>
         <p class="page-header__desc"></p>
