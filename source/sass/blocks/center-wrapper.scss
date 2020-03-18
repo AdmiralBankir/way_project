@@ -1,3 +1,9 @@
 .center-wrapper {
-  width: 61%;
+  width: 60%;
+}
+
+@media (max-width: $tablet-max-width) {
+  .center-wrapper {
+    width: 100%;
+  }
 }

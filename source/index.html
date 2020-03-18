@@ -21,7 +21,9 @@
         <use xlink:href="#icon-logo" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
       </svg>
 
-      <div class="page-header_nav-wrapper">
+      <button class="page-header__toggle" type="button"></button>
+
+      <div class="page-header__nav-wrapper page-header__nav-wrapper--nojs">
         <nav class="page-header__nav">
           <a class="page-header__travel-link" href="#">О путешествии</a>
           <a class="page-header__price-link" href="#">Цены</a>
@@ -51,11 +53,19 @@
       </picture>
       <div class="page-header__banner">
         <p class="page-header__title">Путешествие по Европе</p>
-        <p class="page-header__desc"></p>
-        <a class="page-header__tour-link" href="#">Смотреть тур</a>
+        <p class="page-header__desc">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
+          также потрясающая красота природы.</p>
+        <a class="page-header__tour-link button" href="#">
+          Смотреть тур
+          <svg width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="#icon-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </header>
+
+  <script src="./js/menu-nav.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+.button {
+  text-decoration: none;
+  background-color: $accent-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: all $transition-time $transition-function;
+}
+
+@media (min-width: $desktop-min-width) {
+  .button:hover {
+    background-color: $accent-hover-color;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .button {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+  }
+}

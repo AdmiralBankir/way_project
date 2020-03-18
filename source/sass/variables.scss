@@ -4,3 +4,18 @@ $dark-color: #2c2e3f;
 $accent-color: #fe7865;
 $accent-hover-color: #f17d4b;
 $light-color: #fbf8f8;
+$white-color: #ffffff;
+
+// Sizes
+$mobile-min-width: 320px;
+$desktop-min-width: 1024px;
+$tablet-max-width: 1023px;
+$mobile-max-width: 767px;
+
+// Animation
+$transition-time: 200ms;
+$transition-function: ease-in-out;
+
+// Retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
