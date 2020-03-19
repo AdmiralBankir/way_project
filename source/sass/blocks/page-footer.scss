@@ -1,0 +1,90 @@
+.page-footer h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $dark-color;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.page-footer__travels-list a,
+.page-footer__corporative p {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(20, 21, 23, 0.5);
+  text-decoration: none;
+}
+
+.page-footer__travels-list li {
+  list-style: none;
+  margin-right: 51px;
+}
+
+.page-footer__travels-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 138px;
+  width: 389px;
+}
+
+.page-footer__contacts a {
+  font-size: 14px;
+  line-height: 17px;
+  color: $accent-color;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.page-footer__contacts-phone {
+  fill: none;
+  stroke: $main-add-color;
+}
+
+.page-footer {
+  margin: 0 auto;
+  display: flex;
+  padding-top: 15px;
+}
+
+.page-footer__travels {
+  border-right: 1px solid $main-add-color;
+  flex-basis: 33.3%;
+  box-sizing: border-box;
+}
+
+.page-footer__corporative {
+  width: 320px;
+  margin-left: 49px;
+}
+
+.page-footer__corporative h2 {
+  margin-bottom: 20px;
+}
+
+.page-footer__contacts {
+  margin-left: 89px;
+  flex-basis: 23%;
+  border-right: 1px solid $main-add-color;
+  padding-right: 29px;
+}
+
+.page-footer__contacts a:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.page-footer__contacts span {
+  text-decoration: underline;
+}
+
+.page-footer__contacts svg {
+  margin-right: 14px;
+}
+
+.page-footer__contacts h2 {
+  margin-bottom: 20px;
+}
