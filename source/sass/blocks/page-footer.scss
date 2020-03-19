@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+.page-footer__travels-col a:not(:last-child) {
+  margin-bottom: 4px;
+}
+
 .page-footer__post-tablet {
   display: none;
 }
@@ -23,16 +27,13 @@
   display: inline;
 }
 
-.page-footer__travels-list a {
-  list-style: none;
-  flex-basis: 127px;
-}
-
 .page-footer__travels-list {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
   min-height: 138px;
 }
 
