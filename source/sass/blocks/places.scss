@@ -7,16 +7,6 @@
   margin: 0;
   margin-bottom: 64px;
   position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    height: 4px;
-    width: 228px;
-    background: $accent-color;
-    top: 117%;
-    left: 0;
-  }
 }
 
 .places {
@@ -90,4 +80,76 @@
 
 .places__chroatia {
   background-image: url("../img/places-chroatia@1x.jpg");
+}
+
+@media (min-width: $desktop-min-width) {
+  .places h2::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 228px;
+    background: $accent-color;
+    top: 117%;
+    left: 0;
+  }
+
+}
+
+@media (max-width: $tablet-max-width) {
+  .places {
+    margin-top: 80px;
+  }
+
+  .places__text-wrapper {
+    width: 343px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .places h2 {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .places__desc {
+    text-align: center;
+  }
+
+  .places__list {
+    width: calc(100% - 49px);
+    margin-left: 21px;
+  }
+
+  .places__list>li {
+    flex-basis: 288px;
+    min-height: 425px;
+    margin-bottom: 30px;
+  }
+
+  .places__list a {
+    width: 215px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .places {
+    margin-top: 303px;
+  }
+
+  .places h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .places__text-wrapper {
+    width: 288px;
+    margin-bottom: 20px;
+  }
+
+  .places__list {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
