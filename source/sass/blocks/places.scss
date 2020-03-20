@@ -1,0 +1,93 @@
+.places h2 {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  color: $dark-color;
+  margin: 0;
+  margin-bottom: 64px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 228px;
+    background: $accent-color;
+    top: 117%;
+    left: 0;
+  }
+}
+
+.places {
+  margin: 0 auto;
+  margin-top: 198px;
+}
+
+.places__desc {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+  color: rgba(44, 46, 63, 0.7);
+  margin: 0;
+}
+
+.places__list a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.415px;
+  text-decoration: none;
+  color: $dark-color;
+  background-color: $white-color;
+  display: block;
+  width: 251px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.places__list>li {
+  list-style: none;
+  flex-basis: 29%;
+  min-height: 430px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.places__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: -43px;
+}
+
+.places__text-wrapper {
+  width: 358px;
+  margin-bottom: 56px;
+}
+
+.places__greece {
+  background-image: url("../img/places-greece@1x.jpg");
+}
+
+.places__albany {
+  background-image: url("../img/places-albany@1x.jpg");
+}
+
+.places__makedonia {
+  background-image: url("../img/places-makedonia@1x.jpg");
+}
+
+.places__chernogoria {
+  background-image: url("../img/places-chernogoria@1x.jpg");
+}
+
+.places__chroatia {
+  background-image: url("../img/places-chroatia@1x.jpg");
+}

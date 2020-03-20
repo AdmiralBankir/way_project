@@ -15,6 +15,11 @@
   text-decoration: none;
 }
 
+.page-footer__travels-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-footer__travels-col a:not(:last-child) {
   margin-bottom: 4px;
 }
@@ -172,14 +177,13 @@
   }
 
   .page-footer__travels-col {
-    display: flex;
-    flex-direction: column;
     flex-basis: 50%;
   }
 
   .page-footer h2 {
     text-align: center;
   }
+
   .page-footer .page-footer__travels {
     padding-bottom: 13px;
   }
