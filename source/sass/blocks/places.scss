@@ -1,4 +1,4 @@
-.places h2 {
+.places__text-wrapper h2 {
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
@@ -83,7 +83,7 @@
 }
 
 @media (min-width: $desktop-min-width) {
-  .places h2::after {
+  .places__text-wrapper h2::after {
     position: absolute;
     content: "";
     height: 4px;
@@ -97,6 +97,7 @@
 
 @media (max-width: $tablet-max-width) {
   .places {
+    width: 100%;
     margin-top: 80px;
   }
 
@@ -106,7 +107,7 @@
     margin-bottom: 40px;
   }
 
-  .places h2 {
+  .places__text-wrapper h2 {
     font-size: 30px;
     line-height: 45px;
     text-align: center;
@@ -138,7 +139,7 @@
     margin-top: 303px;
   }
 
-  .places h2 {
+  .places__text-wrapper h2 {
     font-size: 24px;
     line-height: 36px;
   }

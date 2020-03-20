@@ -1,0 +1,207 @@
+.card__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  letter-spacing: -1.245px;
+  color: $dark-color;
+  position: relative;
+  margin-bottom: 53px;
+}
+
+
+@media(min-width: $desktop-min-width) {
+  .card__title::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 175px;
+    background: $accent-color;
+    top: 117%;
+    left: 0;
+  }
+}
+
+.card__desc {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+  color: rgba(44, 46, 63, 0.7);
+  margin-bottom: 50px;
+}
+
+.card__wrapper {
+  width: 41%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.card__btn {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  position: relative;
+}
+
+.card blockquote {
+  position: absolute;
+  margin: 0;
+  width: 382px;
+  min-height: 367px;
+  background-color: $white-color;
+  top: 78px;
+  right: -40%;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card__cite h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.691667px;
+  color: $dark-color;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.card__cite p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.408333px;
+  color: rgba(44, 46, 63, 0.7);
+  margin-bottom: 44px;
+}
+
+.card__cite cite {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.466667px;
+  font-style: normal;
+  color: $dark-color;
+  margin-left: 52px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/vlada.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    transform:  translate(-143%,-20%);
+
+  }
+}
+
+.card__cite {
+  padding: 30px 63px 30px 30px;
+}
+
+.card__cite h2::after {
+  position: absolute;
+  content: "";
+  height: 0.73px;
+  width: 68px;
+  background: $accent-color;
+  top: 18%;
+  left: 0;
+  transform: translateX(33px);
+}
+
+
+@media (max-width: $tablet-max-width) {
+  .card {
+    width: 100%;
+    display: block;
+  }
+
+  .card__wrapper {
+    width: calc(100% - 38px * 2);
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .card__title {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card__desc {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .card__btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card img {
+    width: 100vw;
+    height: 415px;
+  }
+
+  .card blockquote {
+    top: 59%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .card__wrapper {
+    width: calc(100% - 16px*2);
+  }
+
+  .card__btn {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  .card blockquote {
+    width: 268px;
+    min-height: 431px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+  }
+
+  .card__cite h2 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .card__cite p {
+    text-align: center;
+    margin-bottom: 68px;
+  }
+
+  .card__cite h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .card__cite cite {
+    margin: 0;
+    text-align: center;
+    display: block;
+
+    &::before {
+      transform: translate(100%,-140%);
+    }
+  }
+}

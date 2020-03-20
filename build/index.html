@@ -43,7 +43,7 @@
         <source type="image/webp" media="(min-width: 768px)" srcset="./img/header-view-tablet@1x.webp, ./img/header-view-tablet@2x.webp 2x">
         <source type="image/webp" media="(min-width: 320px)" srcset="./img/header-view-mobile@1x.webp, ./img/header-view-mobile@2x.webp 2x">
 
-        <source media="(min-width: 768px)" srcset="./img/header-view-tablet@1x.jpg, ./img/header-view-tablet@2x.jpg">
+        <source media="(min-width: 768px)" srcset="./img/header-view-tablet@1x.jpg, ./img/header-view-tablet@2x.jpg 2x">
         <source media="(min-width: 320px)" srcset="./img/header-view-mobile@1x.jpg, ./img/header-view-mobile@2x.jpg 2x">
         <img src="./img/header-view-desktop@1x.jpg" srcset="./img/header-view-desktop@2x.jpg 2x" alt="Прекрасные виды европейских гор. А ещё там есть замок">
       </picture>
@@ -74,6 +74,53 @@
         <li class="places__chernogoria"><a href="">Черногория</a></li>
         <li class="places__chroatia"><a href="">Хорватия</a></li>
       </ul>
+
+      <div class="countries">
+        <ul class="countries__list">
+          <li class="countries__item countries__item--active" tabindex="0">
+            <h3>Греция</h3>
+          </li>
+          <li class="countries__item" tabindex="0">
+            <h3>Албания</h3>
+          </li>
+          <li class="countries__item" tabindex="0">
+            <h3>Македония</h3>
+          </li>
+          <li class="countries__item" tabindex="0">
+            <h3>Черногория</h3>
+          </li>
+          <li class="countries__item" tabindex="0">
+            <h3>Хорватия</h3>
+          </li>
+        </ul>
+
+        <article class="countries__card card card--greece">
+          <div class="card__wrapper">
+            <p class="card__title">Греция</p>
+            <p class="card__desc">
+              На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал.
+              Название его «Метеора» буквально переводится как «висящие в воздухе».
+              Этот монастырь основная цель нашего путешествия в Греции.
+              После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+              наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+            </p>
+            <button class="card__btn button" type="button">Купить тур сейчас</button>
+          </div>
+          <picture>
+            <img width="430" height="596" src="./img/countries-greece@1x.jpg" srcset="./img/countries-greece@2x.jpg 2x" alt="Горный монастырь в Греции">
+          </picture>
+          <blockquote class="card__cite">
+            <h2>Отзывы</h2>
+            <p>
+              Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+              Такие же высоченные скалы. Но здесь потрясает масштаб.
+              Огромная территория, высоко в горах.
+              Ощущение такое, как будто стоишь на краю света!
+            </p>
+            <cite>Влада Голицина</cite>
+          </blockquote>
+        </article>
+      </div>
     </section>
   </main>
 
