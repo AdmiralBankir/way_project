@@ -154,3 +154,27 @@
     width: 100%;
   }
 }
+
+.places__item-lazy {
+  background-image: none;
+}
+
+.places__item-lazy--greece {
+  background-color: $greece-main-color;
+}
+
+.places__item-lazy--albany {
+  background-color: $albany-main-color;
+}
+
+.places__item-lazy--makedonia {
+  background-color: $makedonia-main-color;
+}
+
+.places__item-lazy--chernogoria {
+  background-color: $chernogoria-main-color;
+}
+
+.places__item-lazy--chroatia {
+  background-color: $chroatia-main-color;
+}

@@ -45,7 +45,7 @@
 
         <source media="(min-width: 768px)" srcset="./img/header-view-tablet@1x.jpg, ./img/header-view-tablet@2x.jpg 2x">
         <source media="(min-width: 320px)" srcset="./img/header-view-mobile@1x.jpg, ./img/header-view-mobile@2x.jpg 2x">
-        <img src="./img/header-view-desktop@1x.jpg" srcset="./img/header-view-desktop@2x.jpg 2x" alt="Прекрасные виды европейских гор. А ещё там есть замок">
+        <img loading="lazy" src="./img/header-view-desktop@1x.jpg" srcset="./img/header-view-desktop@2x.jpg 2x" alt="Прекрасные виды европейских гор. А ещё там есть замок">
       </picture>
       <div class="page-header__banner">
         <p class="page-header__title">Путешествие по Европе</p>
@@ -68,11 +68,11 @@
         <p class="places__desc">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       </div>
       <ul class="places__list">
-        <li class="places__greece"><a href="">Греция</a></li>
-        <li class="places__albany"><a href="">Албания</a></li>
-        <li class="places__makedonia"><a href="">Македония</a></li>
-        <li class="places__chernogoria"><a href="">Черногория</a></li>
-        <li class="places__chroatia"><a href="">Хорватия</a></li>
+        <li class="places__greece places__item-lazy places__item-lazy--greece"><a href="">Греция</a></li>
+        <li class="places__albany places__item-lazy places__item-lazy--albany"><a href="">Албания</a></li>
+        <li class="places__makedonia places__item-lazy places__item-lazy--makedonia"><a href="">Македония</a></li>
+        <li class="places__chernogoria places__item-lazy places__item-lazy--chernogoria"><a href="">Черногория</a></li>
+        <li class="places__chroatia places__item-lazy places__item-lazy--chroatia"><a href="">Хорватия</a></li>
       </ul>
 
       <div class="countries">
@@ -107,7 +107,8 @@
             <button class="card__btn button" type="button">Купить тур сейчас</button>
           </div>
           <picture>
-            <img width="430" height="596" src="./img/countries-greece@1x.jpg" srcset="./img/countries-greece@2x.jpg 2x" alt="Горный монастырь в Греции">
+            <source type="image/webp" srcset="./img/countries-greece@1x.webp, ./img/countries-greece@2x.webp 2x">
+            <img width="430" height="596" loading="lazy" src="./img/countries-greece@1x.jpg" srcset="./img/countries-greece@2x.jpg 2x" alt="Горный монастырь в Греции">
           </picture>
           <blockquote class="card__cite">
             <h2>Отзывы</h2>
@@ -180,6 +181,7 @@
   </footer>
 
   <script src="./js/menu-nav.js"></script>
+  <script src="./js/lazy-background.js"></script>
 </body>
 
 </html>
