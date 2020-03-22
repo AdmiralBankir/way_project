@@ -1,0 +1,85 @@
+.form__any-quest {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  color: $very-dark-color;
+}
+
+.form__text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $very-dark-color;
+}
+
+.form__phone input,
+.form__email input {
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 17px;
+  color: $very-dark-color;
+  padding: 16px 15px 15px 15px;
+  width: 100%;
+}
+
+.form__phone input {
+  padding-left: 26px;
+}
+
+.form__phone {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "*";
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    width: 6px;
+    height: 6px;
+    color: $accent-color;
+    left: 15px;
+    top: 6px;
+  }
+}
+
+.form__submit button {
+  text-decoration: none;
+  background-color: $accent-color;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  color: $white-color;
+  padding: 18px 40px;
+  transition: all $transition-time $transition-function;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: $desktop-min-width) {
+  .form__submit button:hover {
+    background-color: $accent-hover-color;
+  }
+
+  .form__phone input:hover,
+  .form__email input:hover {
+    cursor: pointer;
+    border-color: $accent-color;
+    transition: all $transition-time $transition-function;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .form__submit button {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 2px;
+  }
+}

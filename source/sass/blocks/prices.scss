@@ -115,6 +115,19 @@
   line-height: 32px;
   color: $dark-color;
   list-style: none;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 12px;
+    background: url("../img/icon-ok.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -24px;
+    top: 10px;
+  }
 }
 
 .prices__rate-features-list>li:not(:last-child) {
@@ -146,7 +159,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 65%;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .prices__rate-wrapper {
@@ -158,7 +171,64 @@
 
 .prices__buy-btn {
   width: 100%;
+  border: none;
   margin-top: auto;
+}
+
+.prices__contact-link,
+.prices__card {
+  transition: all $transition-time $transition-function;
+}
+
+.prices__card:focus {
+  border: 1px solid $accent-color;
+}
+
+.prices__card:focus .prices__rate-name,
+.prices__card:focus .prices__rate-cost {
+  color: $accent-color;
+  transition: all $transition-time $transition-function;
+}
+
+.prices__card:focus .prices__rate-features-list {
+  border-top: 1px solid rgba($color: $accent-color, $alpha: 0.5);
+}
+
+.prices__contact-link:focus svg {
+  fill: $very-dark-color;
+}
+
+.prices__contact-link:focus span {
+  color: $accent-color;
+}
+
+@media (min-width: $desktop-min-width) {
+
+  .prices__card {
+    cursor: pointer;
+  }
+
+  .prices__card:hover {
+    border: 1px solid $accent-color;
+  }
+
+  .prices__card:hover .prices__rate-name,
+  .prices__card:hover .prices__rate-cost {
+    color: $accent-color;
+    transition: all $transition-time $transition-function;
+  }
+
+  .prices__card:hover .prices__rate-features-list {
+    border-top: 1px solid rgba($color: $accent-color, $alpha: 0.5);
+  }
+
+  .prices__contact-link:hover svg {
+    fill: $very-dark-color;
+  }
+
+  .prices__contact-link:hover span {
+    color: $accent-color;
+  }
 }
 
 

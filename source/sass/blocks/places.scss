@@ -23,7 +23,7 @@
   margin: 0;
 }
 
-.places__list a {
+.places__list-item>a {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -38,7 +38,7 @@
   padding-bottom: 17px;
 }
 
-.places__list > li {
+.places__list>li {
   list-style: none;
   flex-basis: 29%;
   min-height: 430px;
@@ -83,6 +83,22 @@
   background-image: url("../img/places-chroatia@1x.jpg");
 }
 
+.places__overlay {
+  display: none;
+  background: rgba(20, 21, 23, 0.6);
+  transition: all $transition-time $transition-function;
+}
+
+.places__list-item-link:focus + .places__overlay {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 @media (min-width: $desktop-min-width) {
   .places__text-wrapper h2::after {
     position: absolute;
@@ -93,6 +109,38 @@
     top: 117%;
     left: 0;
   }
+
+  .places__list>li {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .places__overlay>a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white-color;
+    padding: 28px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .places__list-item:hover .places__overlay {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+
 }
 
 @media (max-width: $tablet-max-width) {
@@ -123,7 +171,7 @@
     margin-left: 21px;
   }
 
-  .places__list > li {
+  .places__list>li {
     flex-basis: 288px;
     min-height: 425px;
     margin-bottom: 30px;

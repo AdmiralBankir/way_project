@@ -115,6 +115,23 @@
   margin-left: 53px;
 }
 
+@media (min-width: $desktop-min-width) {
+  .page-footer__travels-list a:hover {
+    color: $accent-color;
+    transition: all $transition-time $transition-function;
+  }
+
+  .page-footer__contacts-link:hover svg {
+    stroke: $accent-color;
+    fill: $very-dark-color;;
+    transition: all $transition-time $transition-function;
+  }
+  .page-footer__contacts-link:hover span {
+    color: $very-dark-color;
+  }
+
+}
+
 @media (max-width: $tablet-max-width) {
   .page-footer {
     padding-top: 80px;

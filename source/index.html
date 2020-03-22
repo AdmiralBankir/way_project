@@ -25,8 +25,8 @@
 
       <div class="page-header__nav-wrapper page-header__nav-wrapper--nojs">
         <nav class="page-header__nav">
-          <a class="page-header__travel-link" href="#">О путешествии</a>
-          <a class="page-header__price-link" href="#">Цены</a>
+          <a class="page-header__travel-link" href="#places">О путешествии</a>
+          <a class="page-header__price-link" href="#prices">Цены</a>
         </nav>
 
         <a class="page-header__contact" href="tel:+749978468446">
@@ -55,7 +55,7 @@
         <p class="page-header__title">Путешествие по Европе</p>
         <p class="page-header__desc">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
           также потрясающая красота природы.</p>
-        <a class="page-header__tour-link button" href="#">
+        <a class="page-header__tour-link button" href="#countries">
           Смотреть тур
           <svg width="16" height="16" viewBox="0 0 16 16">
             <use xlink:href="#icon-arrow" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
@@ -65,22 +65,37 @@
     </div>
   </header>
   <main>
-    <section class="places center-wrapper">
+    <section class="places center-wrapper" id="places">
       <div class="places__text-wrapper">
         <h2>Места посещения</h2>
         <p class="places__desc">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       </div>
       <ul class="places__list">
-        <li class="places__greece places__item-lazy places__item-lazy--greece"><a href="">Греция</a></li>
-        <li class="places__albany places__item-lazy places__item-lazy--albany"><a href="">Албания</a></li>
-        <li class="places__makedonia places__item-lazy places__item-lazy--makedonia"><a href="">Македония</a></li>
-        <li class="places__chernogoria places__item-lazy places__item-lazy--chernogoria"><a href="">Черногория</a></li>
-        <li class="places__chroatia places__item-lazy places__item-lazy--chroatia"><a href="">Хорватия</a></li>
+        <li class="places__greece places__list-item places__item-lazy places__item-lazy--greece"><a
+            class="places__list-item-link" href="#countries-greece">Греция</a>
+          <div class="places__overlay"><a href="#countries-greece">Смотреть подробнее</a></div>
+        </li>
+        <li class="places__albany places__list-item places__item-lazy places__item-lazy--albany"><a
+            class="places__list-item-link" href="">Албания</a>
+          <div class="places__overlay"><a class="places__list-item-link" href="#">Смотреть подробнее</a></div>
+        </li>
+        <li class="places__makedonia  places__list-item places__item-lazy places__item-lazy--makedonia"><a
+            class="places__list-item-link" href="">Македония</a>
+          <div class="places__overlay"><a class="places__list-item-link" href="#">Смотреть подробнее</a></div>
+        </li>
+        <li class="places__chernogoria places__list-item places__item-lazy places__item-lazy--chernogoria"><a
+            class="places__list-item-link" href="">Черногория</a>
+          <div class="places__overlay"><a class="places__list-item-link" href="#">Смотреть подробнее</a></div>
+        </li>
+        <li class="places__chroatia places__list-item  places__item-lazy places__item-lazy--chroatia"><a
+            class="places__list-item-link" href="">Хорватия</a>
+          <div class="places__overlay"><a class="places__list-item-link" href="#">Смотреть подробнее</a></div>
+        </li>
       </ul>
 
-      <div class="countries">
+      <div class="countries" id="countries">
         <ul class="countries__list">
-          <li class="countries__item countries__item--active" tabindex="0">
+          <li class="countries__item countries__item--active" tabindex="0" id="countries-greece">
             <h3>Греция</h3>
           </li>
           <li class="countries__item" tabindex="0">
@@ -124,11 +139,47 @@
             </p>
             <cite>Влада Голицина</cite>
           </blockquote>
+          <div class="countries__modal">
+            <div class="countries__modal-img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="./img/modal@1x.webp, ./img/modal@2x.webp 2x">
+                <img loading="lazy" width="338" height="444" src="./img/modal@1x.jpg" srcset="./img/modal@2x.jpg 2x"
+                  alt="Море, пляж">
+              </picture>
+            </div>
+
+            <div class="countries__modal__wrapper form">
+              <button class="countries__modal-close" aria-label="modal-close" type="button"></button>
+              <p class="countries__modal__any-quest form__any-quest">Купить тур</p>
+              <form method="get" action="https://echo.htmlacademy.ru">
+                <div class="countries__modal_inner-wrapper">
+                  <div class="countries__modal_input-container">
+                    <div class="countries__modal__phone form__phone">
+                      <label class="visually-hidden" for="modal-phone-number">Телефон</label>
+                      <input type="tel" id="modal-phone-number" name="user-phone-number"
+                        pattern="^(\s*)?(\+)?([-()+]?\d[-()+]?)*(\s*)?$" minlength="10"
+                        placeholder="+7  Введите 10 цифр номера" required>
+                    </div>
+
+                    <div class="countries__modal__email form__email">
+                      <label class="visually-hidden" for="modal-email">E-mail</label>
+                      <input type="email" id="modal-email" name="user-email" placeholder="E-mail" required>
+                    </div>
+                  </div>
+
+                  <div class="countries__modal__submit form__submit">
+                    <button type="submit">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
       <div class="prices__info-container">
         <h2>Цены</h2>
         <p class="prices__desc">Специально для Вас мы разработали 2 пакета цен с разными условиями,
@@ -137,7 +188,7 @@
         </p>
         <div class="prices__contact-wrapper">
           <p>Свяжитесь с нами</p>
-          <a href="" href="tel:+749978468446">
+          <a class="prices__contact-link" href="tel:+749978468446">
             <svg class="prices__contacts-phone" width="30" height="30" viewBox="0 0 30 30">
               <use xlink:href="#icon-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
             </svg>
@@ -179,6 +230,48 @@
         </div>
       </div>
     </section>
+
+    <section class="feedback-form center-wrapper">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <div class="feedback-form__img-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="./img/lounge-form-desktop@1x.webp,
+            ./img/lounge-form-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/lounge-form-tablet@1x.webp,
+          ./img/lounge-form-tablet@2x.webp 2x">
+
+          <source media="(min-width: 768px)" srcset="./img/lounge-form-tablet@1x.jpg,
+          ./img/lounge-form-tablet@2x.webp 2x">
+          <img width="844" height="455" loading="lazy" src="./img/lounge-form-desktop@1x.jpg"
+            srcset="./img/lounge-form-desktop@2x.jpg 2x" alt="Море и облака">
+        </picture>
+      </div>
+      <div class="feedback-form__wrapper form">
+        <p class="feedback-form__any-quest form__any-quest">У Вас остались вопросы?</p>
+        <p class="feedback-form__text form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <div class="feedback-form__inner-wrapper">
+            <div class="feedback-form__input-container">
+              <div class="feedback-form__phone form__phone">
+                <label class="visually-hidden" for="phone-number">Телефон</label>
+                <input type="tel" id="phone-number" name="user-phone-number"
+                  pattern="^(\s*)?(\+)?([-()+]?\d[-()+]?)*(\s*)?$" minlength="10"
+                  placeholder="+7  Введите 10 цифр номера" required>
+              </div>
+
+              <div class="feedback-form__email form__email">
+                <label class="visually-hidden" for="email">E-mail</label>
+                <input type="email" id="email" name="user-email" placeholder="E-mail" required>
+              </div>
+            </div>
+
+            <div class="feedback-form__submit form__submit">
+              <button type="submit">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer center-wrapper">
@@ -212,14 +305,14 @@
     <section class="page-footer__contacts">
       <div class="page-footer__contacts-wrapper">
         <h2>Наши контакты</h2>
-        <a href="mailto:puteshestviemechta@gmail.ru">
+        <a class="page-footer__contacts-link" href="mailto:puteshestviemechta@gmail.ru">
           <svg width="26" height="20" viewBox="0 0 26 20">
             <use xlink:href="#icon-post" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>
           <span class="page-footer__post-desktop">puteshestviemechta@gmail.ru</span>
           <span class="page-footer__post-tablet">Почта</span>
         </a>
-        <a href="" href="tel:+749978468446">
+        <a class="page-footer__contacts-link" href="" href="tel:+749978468446">
           <svg class="page-footer__contacts-phone" width="30" height="30" viewBox="0 0 30 30">
             <use xlink:href="#icon-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>
