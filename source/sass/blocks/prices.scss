@@ -1,0 +1,285 @@
+.prices h2 {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: $dark-color;
+  position: relative;
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+@media (min-width: $desktop-min-width) {
+  .prices h2::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 175px;
+    background: $accent-color;
+    top: 117%;
+    left: 0;
+  }
+}
+
+.prices__desc {
+  font-size: 16px;
+  line-height: 27px;
+  color: rgba(44, 46, 63, 0.7);
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.prices__contact-wrapper p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $very-dark-color;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.prices__contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices__contact-wrapper span {
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.prices__contact-wrapper a {
+  text-decoration: none;
+  display: flex;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.prices__contact-wrapper svg {
+  fill: none;
+  stroke: $accent-color;
+  margin-right: 18px;
+}
+
+.prices__card {
+  background: #FFFFFF;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  box-sizing: border-box;
+  border-radius: 6px;
+  flex-basis: 48.2%;
+  min-height: 672px;
+  padding: 40px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.prices__rate-name {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.27273px;
+  color: rgba(20, 21, 23, 0.7);
+  margin: 0;
+  display: inline;
+  word-break: break-word;
+}
+
+.prices__rate-cost {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+  color: rgba(20, 21, 23, 0.7);
+}
+
+
+.prices__rate-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-color;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.prices__rate-features-list {
+  margin: 0;
+  border-top: 1px solid rgba(44, 46, 63, 0.3);
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.prices__rate-features-list>li {
+  font-size: 16px;
+  line-height: 32px;
+  color: $dark-color;
+  list-style: none;
+}
+
+.prices__rate-features-list>li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 375px - 365px);
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop-min-width) {
+  .prices {
+    min-width: 900px;
+  }
+}
+
+.prices__info-container {
+  order: 1;
+  width: 25.8%;
+  min-height: 460px;
+  margin-top: 115px;
+  margin-right: -10px;
+}
+
+.prices__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+    justify-content: space-between;
+}
+
+.prices__rate-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.prices__buy-btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+
+@media (max-width: $tablet-max-width) {
+  .prices {
+    display: block;
+    width: calc(100% - 42px);
+  }
+
+  .prices__info-container {
+    order: 0;
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 30px;
+  }
+
+  .prices h2 {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .prices__desc {
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  .prices__contact-wrapper p {
+    text-align: center;
+  }
+
+  .prices__contact-wrapper a {
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .prices__contact-wrapper span {
+    font-size: 18px;
+    text-decoration: underline;
+    color: $accent-color;
+  }
+
+  .prices__card-container {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .prices__card {
+    position: relative;
+    flex-basis: 288px;
+    min-height: 629px;
+    padding: 30px 20px 55px 20px;
+  }
+
+  .prices__buy-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .prices__contact-wrapper p {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .prices__contacts-phone {
+    display: none;
+  }
+
+  .prices__rate-name {
+    line-height: 34px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .prices__rate-wrapper {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .prices__rate-title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .prices__card-container>div:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .prices__rate-features-list {
+    padding-top: 20px;
+  }
+
+  .prices__rate-features-list>li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .prices {
+    width: calc(100% - 32px);
+  }
+
+  .prices h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .prices__desc {
+    margin-bottom: 18px;
+  }
+
+  .prices__card {
+    flex-basis: 100%;
+    padding-bottom: 76px;
+    min-height: auto;
+  }
+
+  .prices__info-container {
+    margin-bottom: 38px;
+  }
+}

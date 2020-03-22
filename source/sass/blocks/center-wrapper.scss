@@ -1,6 +1,6 @@
 @media (min-width: $desktop-min-width) {
   .center-wrapper {
-    width: 60%;
+    width: calc(100% - 375px * 2);
     min-width: 900px;
   }
 }
