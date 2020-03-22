@@ -52,7 +52,7 @@
   margin-right: 46px;
 }
 
-.page-header__nav>a:not(:last-child) {
+.page-header__nav > a:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -151,7 +151,7 @@
     width: 100%;
   }
 
-  .page-header__nav>a:not(:last-child),
+  .page-header__nav > a:not(:last-child),
   .page-header__nav {
     margin-right: 0;
   }
@@ -224,7 +224,7 @@
     margin-top: 134px;
   }
 
-  .page-header__nav>a:not(:last-child) {
+  .page-header__nav > a:not(:last-child) {
     margin-bottom: 30px;
   }
 
@@ -297,7 +297,6 @@
     width: 100%;
     margin-left: 5px;
   }
-
 }
 
 @media (min-width: 321px) and (max-width: $mobile-max-width) {

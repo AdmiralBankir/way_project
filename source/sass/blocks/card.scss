@@ -10,7 +10,7 @@
 }
 
 
-@media(min-width: $desktop-min-width) {
+@media (min-width: $desktop-min-width) {
   .card__title::after {
     position: absolute;
     content: "";
@@ -101,8 +101,7 @@
     background-image: url("../img/vlada.jpg");
     border-radius: 50%;
     background-size: cover;
-    transform:  translate(-143%,-20%);
-
+    transform: translate(-143%, -20%);
   }
 }
 
@@ -165,7 +164,7 @@
 
 @media (max-width: $mobile-max-width) {
   .card__wrapper {
-    width: calc(100% - 16px*2);
+    width: calc(100% - 16px * 2);
   }
 
   .card__btn {
@@ -202,7 +201,7 @@
     display: block;
 
     &::before {
-      transform: translate(100%,-140%);
+      transform: translate(100%, -140%);
     }
   }
 }

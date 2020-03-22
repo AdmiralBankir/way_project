@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if ('IntersectionObserver' in window) {
     lazyloadImages = document.querySelectorAll('.places__item-lazy');
-    var imageObserver = new IntersectionObserver(function (entries, observer) {
+    var imageObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           var image = entry.target;
@@ -20,4 +20,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
