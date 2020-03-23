@@ -22,7 +22,7 @@ var imageminMozjpeg = require("imagemin-mozjpeg");
 gulp.task("mozjpeg", () =>
     gulp.src("source/img/**/*.jpg")
     .pipe(imagemin([imageminMozjpeg({
-        quality: 80
+        quality: 60
     })]))
     .pipe(gulp.dest("source/img"))
 );
