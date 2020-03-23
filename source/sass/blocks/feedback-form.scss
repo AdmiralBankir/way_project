@@ -1,6 +1,6 @@
 .feedback-form {
   margin: 0 auto;
-  margin-bottom: 170px;
+  margin-bottom: 150px;
   position: relative;
 }
 
@@ -50,6 +50,10 @@
 @media (max-width: $tablet-max-width) {
   .feedback-form__img-wrapper {
     width: 100%;
+  }
+
+  .feedback-form__input-container {
+    margin-bottom: 20px;
   }
 
   .feedback-form__img-wrapper img {

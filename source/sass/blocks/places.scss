@@ -147,6 +147,7 @@
   .places {
     width: 100%;
     margin-top: 80px;
+    margin-bottom: 0;
   }
 
   .places__text-wrapper {
@@ -169,6 +170,7 @@
   .places__list {
     width: calc(100% - 49px);
     margin-left: 21px;
+    margin-bottom: 60px;
   }
 
   .places__list>li {
