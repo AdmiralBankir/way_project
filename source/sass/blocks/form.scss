@@ -92,4 +92,15 @@
     line-height: 12px;
     letter-spacing: 2px;
   }
+
+  .form__submit button:active {
+    background-color: $accent-hover-color;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .form__submit button {
+    max-width: 288px;
+    margin: 0 auto;
+  }
 }

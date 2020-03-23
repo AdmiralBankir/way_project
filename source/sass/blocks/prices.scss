@@ -358,4 +358,9 @@
   .prices__info-container {
     margin-bottom: 38px;
   }
+
+  .prices__buy-btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
