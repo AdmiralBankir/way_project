@@ -229,6 +229,10 @@
   .prices__contact-link:hover span {
     color: $accent-color;
   }
+
+  .prices__card:hover .prices__rate-features-list>li::before {
+    background: url("../img/icon-ok-hover.svg");
+  }
 }
 
 

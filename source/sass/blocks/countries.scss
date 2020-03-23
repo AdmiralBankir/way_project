@@ -31,12 +31,18 @@
 
 .countries__modal {
   display: none;
+}
+
+.countries__modal--active {
   display: flex;
+}
+
+.countries__modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  z-index: 2222;
+  z-index: 100500;
   width: 728px;
   height: 444px;
   background: $light-color;
@@ -115,5 +121,28 @@
 @media (max-width: $mobile-max-width) {
   .countries__list {
     width: calc(100% - 16px * 2);
+  }
+
+  .countries__modal {
+    width: 100%;
+    height: 568px;
+  }
+
+  .countries__modal-img-wrapper {
+    display: none;
+  }
+
+  .countries__modal__wrapper {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+
+  .countries__modal__wrapper .countries__modal__any-quest {
+    line-height: 43px;
+    margin-top: 100px;
+  }
+
+  .countries__modal_inner-wrapper {
+    width: 100%;
   }
 }

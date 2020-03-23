@@ -151,7 +151,7 @@
             <div class="countries__modal__wrapper form">
               <button class="countries__modal-close" aria-label="modal-close" type="button"></button>
               <p class="countries__modal__any-quest form__any-quest">Купить тур</p>
-              <form method="get" action="https://echo.htmlacademy.ru">
+              <form method="get">
                 <div class="countries__modal_inner-wrapper">
                   <div class="countries__modal_input-container">
                     <div class="countries__modal__phone form__phone">
@@ -249,7 +249,7 @@
       <div class="feedback-form__wrapper form">
         <p class="feedback-form__any-quest form__any-quest">У Вас остались вопросы?</p>
         <p class="feedback-form__text form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <form method="get" action="https://echo.htmlacademy.ru">
+        <form>
           <div class="feedback-form__inner-wrapper">
             <div class="feedback-form__input-container">
               <div class="feedback-form__phone form__phone">
@@ -329,8 +329,20 @@
     </section>
   </footer>
 
+  <template id="success">
+    <div class="success">
+      <button class="success__close" aria-label="modal-close" type="button"></button>
+      <p class="success__message">Форма успешно отправлена,<br> спасибо! :)</p>
+    </div>
+  </template>
+
+  <div class="overlay"></div>
+
   <script src="./js/menu-nav.js"></script>
   <script src="./js/lazy-background.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/picturefill.js"></script>
 </body>
 
 </html>

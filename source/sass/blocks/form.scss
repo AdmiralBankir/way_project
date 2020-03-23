@@ -13,6 +13,16 @@
   color: $very-dark-color;
 }
 
+.form__error-message {
+  margin: 0;
+  position: absolute;
+  z-index: 11;
+  transform: translateY(-20px);
+  font-size: 12px;
+  line-height: 15px;
+  color: $accent-color;
+}
+
 .form__phone input,
 .form__email input {
   border: 1px solid rgba(44, 46, 63, 0.3);
@@ -22,6 +32,7 @@
   color: $very-dark-color;
   padding: 16px 15px 15px 15px;
   width: 100%;
+  position: relative;
 }
 
 .form__phone input {
