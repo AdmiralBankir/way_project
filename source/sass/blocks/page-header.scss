@@ -247,9 +247,14 @@
   }
 
   .page-header__nav-wrapper--nojs {
+    display: block;
     position: relative;
     width: 100%;
     min-height: auto;
+  }
+
+  .page-header__toggle--nojs {
+    display: none;
   }
 
   .page-header__nav-wrapper--nojs .page-header__travel-link {

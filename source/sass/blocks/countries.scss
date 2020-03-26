@@ -47,6 +47,7 @@
   width: 728px;
   height: 444px;
   background: $light-color;
+  overscroll-behavior-y: contain;
 }
 
 .countries__modal-img-wrapper {

@@ -24,37 +24,22 @@
     });
   }
 
-  var setValidityMessage = function (form) {
-    var submit = form.querySelector('button[type=submit]');
-    var inputs = form.querySelectorAll('input');
+  var onInputChange = function (e) {
+    var input = e.target;
 
-    submit.addEventListener('click', function () {
-      for (var k = 0; k < inputs.length; k++) {
-        var input = inputs[k];
+    if (!input.checkValidity()) {
+      input.classList.add('form__error-input');
+    } else {
+      input.classList.remove('form__error-input');
+    }
+  }
 
-        if (input.checkValidity() === false) {
-          if (!input.classList.contains('form__error-input')) {
-            input.insertAdjacentHTML('beforebegin', '<p class="form__error-message">' + INVALID_MESSAGE + '</p>');
-            input.classList.add('form__error-input');
-          }
-        } else {
-          if (input.classList.contains('form__error-input')) {
-            var errorMessages = form.querySelectorAll('.form__error-message');
-            for (var z = 0; z < errorMessages.length; z++) {
-              errorMessages[z].remove();
-            }
-            input.classList.remove('form__error-input');
-          }
-        }
-      }
-    });
+  var inputs = document.querySelectorAll('input');
 
-  };
+  inputs.forEach(function (input) {
+    input.insertAdjacentHTML('afterend', '<p class="form__error-message">' + INVALID_MESSAGE + '</p>');
+    input.addEventListener('input', onInputChange);
+  });
 
-  var modalForm = document.querySelector('.countries__modal__wrapper form');
-  var feedbackForm = document.querySelector('.feedback-form__wrapper form');
-
-  setValidityMessage(modalForm);
-  setValidityMessage(feedbackForm);
 
 })();
